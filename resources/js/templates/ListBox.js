@@ -2,7 +2,7 @@
 	'use strict';
 
 	/**
-	 * Creates and returns a template for an indivicual grid box
+	 * Creates and returns a template for an indivicual list box
 	 *
 	 * @constructor
 	 */
@@ -10,9 +10,9 @@
 	}
 
 	/**
-	 * HTML template for the grid box
+	 * HTML template for the list box
 	 *
-	 * @prama {object} data for the grid box:
+	 * @prama {object} data for the list box:
 	 * {
 			name:'Jenny Shen',
 			content: 'Bacon ipsum dolor sit amet jerky short ribs tongue ham kevin biltong tri-tip jowl. Chicken fatback beef porchetta kielbasa tai',
