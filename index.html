@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+	<head>
+		<meta charset="utf-8">
+		<title>Front End Demo</title>
+		<link href="resources/stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="resources/stylesheets/tablet.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 1024px)" >
+		<link href="resources/stylesheets/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)" >
+	</head>
+	<body>
+			<header class="header">
+				<div class="max-width">
+					<div class="left-floater left-fifteen">
+						<a href="index.html"><img src="resources/images/misc/logo.png" /></a>
+					</div>
+					<div class="right-floater">
+						<input type="button" class="new-message-btn" />
+						<div class="search-box desktop tablet">
+							<input type="textfield" class="search-input" /> <input type="button" class="search-btn" />
+						</div>
+						<div class="header-user right-fifteen">
+							<img id="header-user-img" src="resources/images/misc/header-user.png" />
+							<div class="down-arrow"></div>
+							<div class="drop-down desktop">
+								<div class="up-arrow"></div>
+								<ul>
+									<li><a href="#">Profile</a></li>
+									<li><a href="#">Followers</a></li>
+									<li><a href="#">Following</a></li>
+									<li><a href="settings.html">Settings</a></li>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="drop-down-mobile tablet phone">
+					<ul>
+						<li id="serach-row">
+								<div class="search-box">
+									<input type="textfield" class="search-input" /> <input type="button" class="search-btn" />
+								</div>
+								&nbsp;
+						</li>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Followers</a></li>
+						<li><a href="#">Following</a></li>
+						<li><a href="settings.html">Settings</a></li>
+				</div>
+			</header>
+			<!-- main background image -->
+			<div class="responsive-bg">
+				<!-- new post box -->
+				<div class="green-post-box">
+					<input type="textfield" placeholder="What's on your mind?" name="mainPost" class="green-post-textfield" />
+					<div class="green-btns">
+						<input type="button" class="add-photo" value="Add Photo" /> <input type="button" class="add-video" value="Add Video" />
+					</div>
+				</div>
+				<!-- sub navigation -->
+				<div class="sub-nav">
+					<div class="five-seventy-five center-floater">
+						<ul class="nav">
+							<li id="allPosts" class="selected">ALL POSTS</li>
+							<li id="photoPosts">PHOTOS</li>
+							<li id="videoPosts">VIDEOS</li>
+						</ul>
+						<ul class="display-type">
+							<li id="listDisplay" class="selected">&nbsp;</li>
+							<li id="gridDisplay">&nbsp;</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main-content">
+				<!-- content will be inserted here dynamically -->
+			</div>
+		<footer id="footer">
+			<div class="center-floater five-seventy-five">
+			<ul>
+				<li>
+					<a href="#">ABOUT US</a>
+				</li>
+				<li>
+					<a href="#">SUPPORT</a>
+				</li>
+				<li>
+					<a href="#">PRIVACY</a>
+				</li>
+				<li>
+					<a href="#">TERMS</a>
+				</li>
+				<li>
+					&copy; 2014 SIMPLYSOCIAL
+				</li>
+			</ul>
+			</div>
+		</footer>
+		<div class="overlay">
+			<div class="five-seventy-five center-floater left-right-fifteen">
+				<div class="message-box">
+					<div class="hideBtn">X</div>
+					<div class="title">
+						Create a new message
+					</div>
+					<textarea class="new-message-textarea"></textarea>
+					<input type="button" class="add-photo" value="Add Photo" /> <input type="button" class="add-video" value="Add Video" /> <input type="button" class="green-btn" value="Post" />
+				</div>
+			</div>
+		</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="resources/js/3rdParty/jquery.wookmark.js"></script>
+		<script src="resources/js/models/Posts.js"></script>
+		<script src="resources/js/templates/GridBox.js"></script>
+		<script src="resources/js/templates/ListBox.js"></script>
+		<script src="resources/js/controllers/Index.js"></script>
+	</body>
+</html>

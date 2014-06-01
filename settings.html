@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+	<head>
+		<meta charset="utf-8">
+		<title>Front End Demo</title>
+		<link href="resources/stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="resources/stylesheets/settings.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="resources/stylesheets/tablet.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 1024px)" >
+		<link href="resources/stylesheets/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)" >
+	</head>
+	<body>
+			<header class="header">
+				<div class="max-width">
+					<div class="left-floater left-fifteen">
+						<a href="index.html"><img src="resources/images/misc/logo.png" /></a>
+					</div>
+					<div class="right-floater">
+						<input type="button" class="new-message-btn" />
+						<div class="search-box desktop tablet">
+							<input type="textfield" class="search-input" /> <input type="button" class="search-btn" />
+						</div>
+						<div class="header-user right-fifteen">
+							<img id="header-user-img" src="resources/images/misc/header-user.png" />
+							<div class="down-arrow"></div>
+							<div class="drop-down desktop">
+								<div class="up-arrow"></div>
+								<ul>
+									<li><a href="#">Profile</a></li>
+									<li><a href="#">Followers</a></li>
+									<li><a href="#">Following</a></li>
+									<li><a href="settings.html">Settings</a></li>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="drop-down-mobile tablet phone">
+					<ul>
+						<li id="serach-row">
+								<div class="search-box">
+									<input type="textfield" class="search-input" /> <input type="button" class="search-btn" />
+								</div>
+								&nbsp;
+						</li>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Followers</a></li>
+						<li><a href="#">Following</a></li>
+						<li><a href="settings.html">Settings</a></li>
+				</div>
+			</header>
+			<div class="maincontent">
+				<div class="five-seventy-five center-floater left-right-fifteen">
+					<h1>Settings</h1>
+					<div class="fullWidth">
+						<div class="account-title">ACCOUNT</div>
+						<div >
+							<div class="account-left">
+								<img src="resources/images/misc/large-user.png" />
+								<input type="button" class="white-btn" value="change" />
+							</div>
+							<div class="account-right">
+									<div class="gray-input">
+										<input type="textfield" class="name-input white-input" value="Barrett Breshears" />
+									</div>
+									<div class="gray-input">
+										<input type="textfield" class="email-input white-input" value="barrettbreshears@gmail.com" />
+									</div>
+									<div class="gray-input">
+										<input type="password" class="password-input white-input" value="hello" /> <input type="button" class="white-btn-no-border" value="change" />
+									</div>
+							</div>
+						</div>
+					</div>
+					<hr/>
+					<div class="fullWidth">
+						<div class="account-title">NOTIFICATIONS</div>
+						<div class="row">
+							<label class="switch switch-green">
+						      <input type="checkbox" class="switch-input" checked>
+						      <span class="switch-label" ></span>
+						      <span class="switch-handle"></span>
+						    </label>
+						    <span class="notifaction-switch-label">email me when my posts are marked as favorites</span>
+						</div>
+						<div class="row">
+							<label class="switch switch-green">
+						      <input type="checkbox" class="switch-input" checked>
+						      <span class="switch-label" ></span>
+						      <span class="switch-handle"></span>
+						    </label>
+						    <span class="notifaction-switch-label">email me when I'm mentioned</span>
+						</div>
+						<div class="row">
+							<label class="switch switch-green">
+						      <input type="checkbox" class="switch-input" checked>
+						      <span class="switch-label" ></span>
+						      <span class="switch-handle"></span>
+						    </label>
+						    <span class="notifaction-switch-label">email me when I get a reply</span>
+						</div>
+						<div class="row">
+							<label class="switch switch-green">
+						      <input type="checkbox" class="switch-input" checked>
+						      <span class="switch-label"></span>
+						      <span class="switch-handle"></span>
+						    </label>
+						    <span class="notifaction-switch-label">email me when someone follows me</span>
+						</div>
+
+					</div>
+					<hr/>
+					<div class="fullWidth radios">
+						<div class="account-title">PRIVACY</div>
+						<div class="row">
+							<input id="radio1" class="css-checkbox" type="checkbox" checked></input>
+							<label class="css-label" for="radio1"> allow anyonw to tag me</label>
+						</div>
+						<div class="row">
+							<input id="radio2" class="css-checkbox" type="checkbox" ></input>
+							<label class="css-label" for="radio2"> only Allow people I follow to tag me</label>
+						</div>
+						<div class="row">
+							<input id="radio3" class="css-checkbox" type="checkbox" ></input>
+							<label class="css-label" for="radio3"> don't allow anyone to tag me</label>
+						</div>
+						<div class="row">
+							<input id="radio4" class="css-checkbox" type="checkbox" checked></input>
+							<label class="css-label" for="radio4"> add a loction to my posts</label>
+						</div>
+						<div class="row">
+							<input id="radio5" class="css-checkbox" type="checkbox" checked></input>
+							<label class="css-label" for="radio5"> let others find me by my email address</label>
+						</div>
+						<div class="row">
+							<input id="radio6" class="css-checkbox" type="checkbox" checked></input>
+							<label class="css-label" for="radio6"> tailor ads based on my information</label>
+						</div>
+					</div>
+					<hr/>
+					<input type="button" class="green-btn left-floater" value="Save Changes" />
+
+					&nbsp;
+
+				</div>
+			</div>
+			<footer id="footer">
+			<div class="center-floater five-seventy-five">
+			<ul>
+				<li>
+					<a href="#">ABOUT US</a>
+				</li>
+				<li>
+					<a href="#">SUPPORT</a>
+				</li>
+				<li>
+					<a href="#">PRIVACY</a>
+				</li>
+				<li>
+					<a href="#">TERMS</a>
+				</li>
+				<li>
+					&copy; 2014 SIMPLYSOCIAL
+				</li>
+			</ul>
+			</div>
+		</footer>
+		<div class="overlay">
+			<div class="five-seventy-five center-floater left-right-fifteen">
+				<div class="message-box">
+					<div class="hideBtn">X</div>
+					<div class="title">
+						Create a new message
+					</div>
+					<textarea class="new-message-textarea"></textarea>
+					<input type="button" class="add-photo" value="Add Photo" /> <input type="button" class="add-video" value="Add Video" /> <input type="button" class="green-btn" value="Post" />
+				</div>
+			</div>
+		</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="resources/js/3rdParty/jquery.screwDefaultButtonsV2.min.js"></script>
+		<script type="text/javascript" src="resources/js/3rdParty/jquery.wookmark.js"></script>
+		
+		<script src="resources/js/models/Posts.js"></script>
+		<script src="resources/js/templates/GridBox.js"></script>
+		<script src="resources/js/templates/ListBox.js"></script>
+		<script src="resources/js/Controllers/Index.js"></script>
+		
+	</body>
+</html>
