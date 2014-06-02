@@ -41,11 +41,11 @@ $defaultPadding: 25px;
 
 
 // fonts
-@include font-face("Proxima Nova", font-files("/resources/fonts/ProximaNova-Black.otf", "/resources/fonts/ProximaNova-Bold.otf", "/resources/fonts/ProximaNova-BoldIt.otf","/resources/fonts/ProximaNova-Extrabld.otf","/resources/fonts/ProximaNova-Light.otf","/resources/fonts/ProximaNova-LightIt.otf","/resources/fonts/ProximaNova-Regular.otf","/resources/fonts/ProximaNova-RegularIt.otf","/resources/fonts/ProximaNova-Semibold.otf","/resources/fonts/ProximaNova-SemiboldIt.otf","/resources/fonts/ProximaNovaCond-Light.otf","/resources/fonts/ProximaNovaCond-LightIt.otf","/resources/fonts/ProximaNovaCond-Regular.otf","/resources/fonts/ProximaNovaCond-RegularIt.otf", "/resources/fonts/ProximaNovaCond-Semibold.otf","/resources/fonts/ProximaNovaCond-SemiboldIt.otf"));
+@include font-face(ProximaNova, font-files("/resources/fonts/ProximaNova-Black.otf", "/resources/fonts/ProximaNova-Bold.otf", "/resources/fonts/ProximaNova-BoldIt.otf","/resources/fonts/ProximaNova-Extrabld.otf","/resources/fonts/ProximaNova-Light.otf","/resources/fonts/ProximaNova-LightIt.otf","/resources/fonts/ProximaNova-Regular.otf","/resources/fonts/ProximaNova-RegularIt.otf","/resources/fonts/ProximaNova-Semibold.otf","/resources/fonts/ProximaNova-SemiboldIt.otf","/resources/fonts/ProximaNovaCond-Light.otf","/resources/fonts/ProximaNovaCond-LightIt.otf","/resources/fonts/ProximaNovaCond-Regular.otf","/resources/fonts/ProximaNovaCond-RegularIt.otf", "/resources/fonts/ProximaNovaCond-Semibold.otf","/resources/fonts/ProximaNovaCond-SemiboldIt.otf"));
 
 
 body{
-	font-family: "Proxima Nova";
+	font-family: ProximaNova;
 }
 
 h1{
