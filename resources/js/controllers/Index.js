@@ -86,7 +86,6 @@
 			html += listTemplate.template(listData[i]);
 		}
 		html += '</div>';
-		console.log(html);
 		$('.main-content').html(html).hide(0).fadeIn("slow");
 	};
 
